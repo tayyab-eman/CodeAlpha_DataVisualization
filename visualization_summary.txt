@@ -1,0 +1,14 @@
+CodeAlpha Data Analytics Internship - Task 3
+Data Visualization
+
+Dataset: country_population.csv
+
+Visualizations Created:
+1. Top 10 Most Populated Locations - Bar Chart
+2. Population Share of Top 8 Locations - Pie Chart
+3. Population Distribution Across Locations - Histogram
+
+The World aggregate was excluded from country/location comparisons so that the charts focus on individual locations.
+
+Key Observation:
+Population values vary substantially across locations, with a small number of locations having much larger populations than most others.
