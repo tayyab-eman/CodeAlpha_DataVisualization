@@ -1,63 +1,65 @@
-# CodeAlpha Data Analytics Internship — Web Source Project
+# CodeAlpha Data Analytics Internship — Task 3: Data Visualization
 
-This project contains all 4 CodeAlpha Data Analytics tasks, using public web sources.
+## Objective
 
-## Tasks and sources
+The objective of this task is to transform population data into meaningful visualizations and communicate important patterns through charts.
 
-### Task 1 — Web Scraping
-Source: Wikipedia — List of countries and dependencies by population
-https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population
+## Dataset
 
-Tools: Requests, BeautifulSoup, Pandas
+The dataset contains population information collected from a publicly available population webpage.
 
-Output:
-`data/country_population.csv`
+The dataset contains the following columns:
 
-### Task 2 — Exploratory Data Analysis (EDA)
-Source: Our World in Data — Population, 1950 to 2023
-https://ourworldindata.org/grapher/population-unwpp
+- Country / Location
+- Population
+- World Percentage
+- Date
+- Source
 
-Tools: Pandas, NumPy, Matplotlib
+## Tools Used
 
-Output:
-`outputs/task2_eda_summary.txt`
+- Python
+- Pandas
+- Matplotlib
 
-### Task 3 — Data Visualization
-Source: Our World in Data — Population, 1950 to 2023
-https://ourworldindata.org/grapher/population-unwpp
+## Visualizations Created
 
-Outputs:
-- `outputs/task3_top10_population_2023.png`
-- `outputs/task3_population_trend.png`
-- `outputs/task3_world_population_growth.png`
+Three visualizations were created:
 
-### Task 4 — Sentiment Analysis
-Source: UCI Machine Learning Repository — Sentiment Labelled Sentences
-https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences
+1. **Top 10 Most Populated Locations** — Bar Chart
+2. **Population Share of Top 8 Locations** — Pie Chart
+3. **Population Distribution Across Locations** — Histogram
 
-The UCI dataset contains 3,000 positive/negative review sentences from IMDb, Amazon and Yelp. This project uses VADER, a lexicon-based sentiment method, to produce positive/negative/neutral labels.
+The World aggregate was excluded from country/location comparisons so that the charts focus on individual locations.
 
-Output:
-`outputs/task4_sentiment_results.csv`
+## Key Observation
 
-## Installation
+Population values vary substantially across locations, with a small number of locations having much larger populations than most others.
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
+## Output Files
 
-## Run
+The visualizations and summary are stored in the `outputs` folder:
 
-```bash
-python task1_web_scraping.py
-python task2_eda.py
-python task3_visualization.py
-python task4_sentiment_analysis.py
-```
+- `top10_population_visualization.png`
+- `population_share_pie.png`
+- `population_distribution_visualization.png`
+- `visualization_summary.txt`
 
-## Important
-The scripts download/read public data when they are run. Keep the source links in the README and report so the dataset origin is clear.
+## Project Structure
 
-Do not upload your `.venv` folder to GitHub.
+```text
+CodeAlpha_DataVisualization/
+│
+├── data/
+│   └── country_population.csv
+│
+├── outputs/
+│   ├── top10_population_visualization.png
+│   ├── population_share_pie.png
+│   ├── population_distribution_visualization.png
+│   └── visualization_summary.txt
+│
+├── task3_visualization.py
+├── README.md
+├── REPORT.md
+└── requirements.txt
